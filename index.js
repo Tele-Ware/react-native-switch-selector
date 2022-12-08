@@ -207,12 +207,12 @@ export default class SwitchSelector extends Component {
         accessibilityLabel={accessibilityLabel}
         testID={testID}
       >
-        <View {...this.panResponder.panHandlers} style={{ flex: 1 }}>
+        <View {...this.panResponder.panHandlers} style={{}}>
           <View
             style={{
               borderRadius,
               backgroundColor,
-              height: height + buttonMargin * 2,
+              // height: height + buttonMargin * 2,
             }}
             onLayout={(event) => {
               const { width } = event.nativeEvent.layout;
